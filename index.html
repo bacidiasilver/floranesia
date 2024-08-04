@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        UAS Pemrograman Web 1 (Kelompok)
+        Kelas   : IT206
+        Prodi   : PJJ Informatika
+        Matkul  : Pemrograman Web 1
+        Dosen   : R.M.Firzatullah, M.Kom
+        Anggota	:
+        1. Agung Prayoga Kusuma (230401010073)
+        2. Deni Rismanto (230401010301) *tidak membantu
+        3. Muhammad Rifqi Akmal (230401010315)
+        4. Muhammad Anhar Nendra (230401070206) *tidak membantu
+    -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Floranesia adalah web edukasi tentang segala jenis tumbuhan yang ada di Indonesia">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Floranesia</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand fw-bold fs-3 text-white" href="#">Floranesia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pengertian">Pengertian</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tipe">Tipe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">Tentang Kami</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron container p-4 px-sm-5 py-md-5 text-white">
+            <h1 class="fw-bold my-3">Jelajahi Flora Nusantara</h1>
+            <h2 class="lh-base">Selamat datang di Floranesia, portal edukasi tentang kekayaan flora Nusantara. Kami menyediakan informasi mendalam mengenai tumbuhan Indonesia melalui artikel, gambar, dan video interaktif. Tujuan kami adalah meningkatkan pengetahuan Anda tentang tanaman, dari obat tradisional hingga spesies langka. Bergabunglah dengan kami untuk mempelajari dan melestarikan keanekaragaman flora Indonesia.</h2>
+        </div>
+    </header>
+
+    <main class="container my-5 p-2 d-flex flex-column gap-5">
+        <!-- Bagian Pengertian Flora -->
+        <section id="pengertian" class="d-flex flex-column flex-md-row gap-3 p-3 bg-success-subtle rounded">
+            <div class="image">
+                <img src="images/flora.png" alt="Gambar kolase flora endemik Indonesia" class="rounded">
+            </div>
+            <div class="content">
+                <h2 class="fw-bold fs-5">Pengertian Flora</h2>
+                <h3 class="fs-5">
+                    Flora adalah semua jenis tumbuhan atau tanaman yang ada di dunia. Flora memiliki jenis yang sangat banyak dan beragam. Bahkan jumlahnya tidak terhitung lagi. Di Indonesia sendiri ada banyak jenis-jenis flora termasuk yang langka. Istilah kata flora sendiri berasal dari bahasa Latin, yaitu dari kata plantae yang memiliki arti "alamat tumbuhan dan nabatah". Flora dapat diartikan sebagai sekelompok tanaman atau tumbuhan. Di dalam dunia tumbuhan, ada yang dinamakan flora endemic.
+                </h3>
+            </div>
+        </section>
+        
+        <!-- Bagian Video Info -->
+        <section id="video-info" class="d-flex flex-column flex-md-row gap-2">
+            <h3 id="tipe" class="fw-bold fs-5">Tipe-tipe flora di Indonesia</h3>
+            <div class="w-100">
+                <iframe class="w-100 h-100" src="https://www.youtube.com/embed/rDWgQVzZvko" title="Tipe-tipe flora di Indonesia"></iframe>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="container-fluid text-center bg-dark-subtle py-3">
+        <section id="tentang" class="container mb-5">
+            <form id="contactForm" class="mb-5">
+                <h3 class="fw-bold fs-5 mt-4">Kontak Kami</h3>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama</label>
+                    <input type="text" id="name" class="form-control" placeholder="Nama Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email Anda" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea id="message" class="form-control" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+            <div class="profiles d-flex flex-column justify-content-center">
+                <h2 class="fw-bold fs-5">Penyusun</h2>
+                <table>
+                    <tr>
+                        <th>Agung Prayoga Kusuma</th>
+                        <th>Muhammad Rifqi Akmal</th>
+                    </tr>
+                    <tr>
+                        <td>230401010073</td>
+                        <td>230401010315</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <span>Copyright &copy; 2024 - Floranesia</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
